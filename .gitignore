@@ -71,3 +71,8 @@ Thumbs.db
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
+
+# =========================================
+# Others
+# =========================================
+prompt.txt
