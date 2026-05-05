@@ -24,8 +24,8 @@ export function Footer() {
               href="/" 
               className="flex items-center gap-2 font-bold text-xl uppercase tracking-tight"
             >
-              <span className="bg-primary text-primary-foreground px-2 py-1 text-sm">BP</span>
-              <span className="text-primary">Frampula</span>
+              
+              <span className="text-primary">Beerpong Frampula</span>
             </Link>
             <p className="text-sm text-muted-foreground max-w-xs">
               The ultimate Beer Pong tournament experience. Compete, connect, and conquer.
@@ -34,7 +34,7 @@ export function Footer() {
 
           {/* Social Links */}
           <div className="flex flex-col gap-4">
-            <h3 className="font-bold text-lg uppercase text-primary">Find Us On Social</h3>
+            <h3 className="font-bold text-lg uppercase text-primary">Seguici su</h3>
             <div className="flex gap-3">
               {socialLinks.map((social) => (
                 <a

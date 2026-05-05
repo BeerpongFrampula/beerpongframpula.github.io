@@ -27,21 +27,6 @@ export function AboutSection() {
               </p>
             </div>
 
-            {/* Stats */}
-            <div className="grid grid-cols-3 gap-4 mt-8">
-              <div className="bg-primary p-4 border-4 border-secondary neo-brutal-shadow">
-                <div className="text-2xl md:text-3xl font-bold text-secondary">50+</div>
-                <div className="text-xs md:text-sm font-medium uppercase text-primary-foreground">Tournaments</div>
-              </div>
-              <div className="bg-primary p-4 border-4 border-secondary neo-brutal-shadow">
-                <div className="text-2xl md:text-3xl font-bold text-secondary">2000+</div>
-                <div className="text-xs md:text-sm font-medium uppercase text-primary-foreground">Players</div>
-              </div>
-              <div className="bg-primary p-4 border-4 border-secondary neo-brutal-shadow">
-                <div className="text-2xl md:text-3xl font-bold text-secondary">6</div>
-                <div className="text-xs md:text-sm font-medium uppercase text-primary-foreground">Years</div>
-              </div>
-            </div>
           </div>
 
           {/* Image */}

@@ -17,7 +17,7 @@ const spaceMono = Space_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'Beer Pong Frampula | Official Tournament',
+  title: 'Beerpong Frampula',
   description: 'Join the ultimate Beer Pong experience. Compete, connect, and conquer at Beer Pong Frampula tournaments.',
   generator: 'v0.app',
   icons: {

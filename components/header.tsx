@@ -1,15 +1,19 @@
 'use client'
 
-import Link from 'next/link'
 import { useState } from 'react'
+import Image from 'next/image'
+import Link from 'next/link'
 import { Menu, X } from 'lucide-react'
-import { Sheet, SheetContent, SheetTrigger, SheetTitle } from '@/components/ui/sheet'
+
 import { Button } from '@/components/ui/button'
+import { Sheet, SheetContent, SheetTrigger, SheetTitle } from '@/components/ui/sheet'
+
+const LOGO_SRC = '/logo.webp'
 
 const navLinks = [
   { href: '/', label: 'Home' },
   { href: '/regolamento', label: 'Regolamento' },
-  { href: '/contacts', label: 'Contacts' },
+  { href: '/contacts', label: 'Contatti' },
 ]
 
 export function Header() {
@@ -18,15 +22,19 @@ export function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-primary border-b-4 border-secondary">
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-16 md:h-20">
+        <div className="flex items-center justify-between h-18 md:h-20">
           {/* Logo */}
-          <Link 
-            href="/" 
-            className="flex items-center gap-2 font-bold text-xl md:text-2xl text-secondary uppercase tracking-tight"
-          >
-            <span className="bg-secondary text-primary px-2 py-1 text-sm md:text-base">BP</span>
-            <span className="hidden sm:inline">Frampula</span>
-          </Link>
+          <div className="flex items-center gap-1 font-bold text-large md:text-2xl uppercase tracking-tight"> 
+            <Image 
+              src={LOGO_SRC}
+              alt="Beerpong Frampula Logo" 
+              width={40} 
+              height={40} 
+              className="w-17 h-17 md:w-19 md:h-19 rounded-full border-2 bg-white"
+              priority
+            />
+            <span className="inline">Beerpong Frampula</span>
+          </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-1">

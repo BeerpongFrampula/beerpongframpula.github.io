@@ -5,14 +5,14 @@ const contactInfo = [
   {
     icon: Mail,
     label: 'Email',
-    value: 'info@beerpongframpula.com',
-    href: 'mailto:info@beerpongframpula.com',
+    value: 'beerpongframpula@gmail.com',
+    href: 'mailto:beerpongframpula@gmail.com',
   },
   {
     icon: Phone,
-    label: 'Phone',
-    value: '+39 123 456 7890',
-    href: 'tel:+391234567890',
+    label: 'Telefono',
+    value: '+39 351 327 5210',
+    href: 'tel:+393513275210',
   },
   {
     icon: MapPin,
