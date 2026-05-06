@@ -3,6 +3,13 @@ import Link from 'next/link'
 import { ArrowRight, CalendarDays, MapPin } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 
+const tournamentStats = [
+  { id: 'beers', value: '2048', label: 'Lattine di birra' },
+  { id: 'players', value: '512', label: 'Giocatori' },
+  { id: 'teams', value: '256', label: 'Squadre' },
+  { id: 'groups', value: '64', label: 'Gironi' },
+]
+
 export function HeroSection() {
   return (
     <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
@@ -19,7 +26,7 @@ export function HeroSection() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 py-16">
+      <div className="relative z-10 container mx-auto px-2 py-16">
         <div className="max-w-2xl mx-auto">
           {/* Tournament Card */}
           <div className="bg-card border-4 border-secondary neo-brutal-shadow-lg p-6 md:p-10">
@@ -29,8 +36,8 @@ export function HeroSection() {
               </span>
             </div>
             
-            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold uppercase tracking-tight text-secondary mb-4 text-balance">
-              Torneo di Beerpong: 256 copppie
+            <h1 className="text-[29px] md:text-4xl lg:text-6xl font-bold uppercase tracking-tight text-secondary mb-4 text-balance">
+              Torneo di Beerpong
             </h1>
             
             <div className="flex flex-col sm:flex-row gap-4 mb-6 text-secondary">
@@ -40,32 +47,31 @@ export function HeroSection() {
               </div>
               <div className="flex items-center gap-2">
                 <MapPin className="h-5 w-5 text-primary" />
-                <span className="font-medium">Forlimpopoli, Forlì-Cesena</span>
+                <span className="font-medium">Forlimpopoli (FC)</span>
               </div>
             </div>
 
-            
-
-            <div className="grid grid-cols-3 gap-4 mb-4">
-              <div className="bg-primary p-4 border-4 border-secondary neo-brutal-shadow">
-                <div className="text-2xl md:text-3xl font-bold text-secondary">256</div>
-                <div className="text-xs md:text-sm font-medium uppercase text-primary-foreground">Squadre</div>
-              </div>
-              <div className="bg-primary p-4 border-4 border-secondary neo-brutal-shadow">
-                <div className="text-2xl md:text-3xl font-bold text-secondary">64</div>
-                <div className="text-xs md:text-sm font-medium uppercase text-primary-foreground">Gironi</div>
-              </div>
-              <div className="bg-primary p-4 border-4 border-secondary neo-brutal-shadow">
-                <div className="text-2xl md:text-3xl font-bold text-secondary">6</div>
-                <div className="text-xs md:text-sm font-medium uppercase text-primary-foreground">Litri di birra</div>
-              </div>
+            <div className='grid grid-cols-2 gap-4 mb-4'>
+              {tournamentStats.map((stat) => (
+                <div
+                key={stat.id}
+                className='flex flex-col items-center justify-center text-center bg-primary p-4 border-4 border-secondary neo-brutal-shadow'
+                >
+                  <div className='text-2xl md:text-3xl font-bold text-secondary'>
+                    {stat.value}
+                  </div>
+                  <div className='text-xs md:text-sm font-medium uppercase text-primary-foreground'>
+                    {stat.label}
+                  </div>
+                </div>
+              ))}
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
               <Button 
                 asChild
                 size="lg"
-                className="bg-primary text-primary-foreground border-4 border-secondary font-bold uppercase tracking-wide text-base neo-brutal-shadow hover:neo-brutal-shadow-hover hover:translate-x-[2px] hover:translate-y-[2px] transition-all"
+                className="bg-blue-400 text-primary-foreground border-4 border-secondary font-bold uppercase tracking-wide text-base neo-brutal-shadow hover:neo-brutal-shadow-hover hover:translate-x-[2px] hover:translate-y-[2px] transition-all"
               >
                 <Link href="/subscribe">
                   Iscriviti ora
@@ -85,7 +91,7 @@ export function HeroSection() {
       </div>
 
       {/* Decorative Elements */}
-      <div className="absolute bottom-0 left-0 right-0 h-4 bg-primary" />
+      <div className="absolute bottom-0 left-0 right-0 h-4 bg-secondary" />
     </section>
   )
 }
