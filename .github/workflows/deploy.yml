@@ -7,6 +7,10 @@ on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
+# SILENCE THE NODE 20 WARNINGS
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
   # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: read
