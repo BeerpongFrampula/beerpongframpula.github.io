@@ -17,25 +17,7 @@ const spaceMono = Space_Mono({
 
 export const metadata: Metadata = {
   title: 'Beerpong Frampula',
-  description: 'Join the ultimate Beer Pong experience. Compete, connect, and conquer at Beer Pong Frampula tournaments.',
-  generator: 'v0.app',
-  icons: {
-    icon: [
-      {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
-      },
-    ],
-    apple: '/apple-icon.png',
-  },
+  description: 'Since 2016',
 }
 
 export const viewport: Viewport = {
