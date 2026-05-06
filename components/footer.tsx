@@ -1,11 +1,22 @@
 import Link from 'next/link'
-import { Instagram, Facebook, Twitter, Youtube } from 'lucide-react'
+import { SiInstagram, SiFacebook, SiTelegram } from 'react-icons/si'
 
 const socialLinks = [
-  { href: '#', icon: Instagram, label: 'Instagram' },
-  { href: '#', icon: Facebook, label: 'Facebook' },
-  { href: '#', icon: Twitter, label: 'Twitter' },
-  { href: '#', icon: Youtube, label: 'YouTube' },
+  { 
+    href: 'https://www.instagram.com/beerpongframpula/', 
+    icon: SiInstagram, 
+    label: 'Instagram' 
+  },
+  { 
+    href: 'https://t.me/beerpongframpula', 
+    icon: SiTelegram, 
+    label: 'Telegram' 
+  },
+  { 
+    href: 'https://www.facebook.com/beerpongframpula/?locale=it_IT', 
+    icon: SiFacebook, 
+    label: 'Facebook' 
+  },
 ]
 
 const legalLinks = [
@@ -41,9 +52,11 @@ export function Footer() {
                   key={social.label}
                   href={social.href}
                   aria-label={social.label}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-10 h-10 flex items-center justify-center bg-primary text-primary-foreground border-2 border-primary hover:bg-secondary hover:text-primary transition-all neo-brutal-shadow-hover"
                 >
-                  <social.icon className="h-5 w-5" />
+                  <social.icon className="h-6 w-6" />
                 </a>
               ))}
             </div>
