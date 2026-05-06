@@ -43,7 +43,7 @@ export function HeroSection() {
             <div className="flex flex-col sm:flex-row gap-4 mb-6 text-secondary">
               <div className="flex items-center gap-2">
                 <CalendarDays className="h-5 w-5 text-primary" />
-                <span className="font-medium">6 Giugno 2026</span>
+                <span className="font-medium">Sabato, 6 Giugno 2026</span>
               </div>
               <div className="flex items-center gap-2">
                 <MapPin className="h-5 w-5 text-primary" />
@@ -67,31 +67,48 @@ export function HeroSection() {
               ))}
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="grid grid-cols-2 gap-x-4 gap-y-3 w-full">
               <Button 
                 asChild
                 size="lg"
-                className="bg-blue-400 text-primary-foreground border-4 border-secondary font-bold uppercase tracking-wide text-base neo-brutal-shadow hover:neo-brutal-shadow-hover hover:translate-x-[2px] hover:translate-y-[2px] transition-all"
+                className="col-span-2 w-full bg-blue-400 text-primary-foreground border-4 border-secondary font-bold uppercase tracking-wide text-base neo-brutal-shadow hover:bg-blue-400 hover:neo-brutal-shadow-hover hover:translate-x-[2px] hover:translate-y-[2px] transition-all"
               >
-                <Link href="/subscribe">
+                <a 
+                  href="https://tally.so/r/XxJPoj" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                >
                   Iscriviti ora
-                </Link>
+                </a>
               </Button>
+              
               <Button 
                 asChild
                 variant="outline"
                 size="lg"
-                className="bg-transparent text-secondary border-4 border-secondary font-bold uppercase tracking-wide text-base neo-brutal-shadow hover:bg-transparent hover:neo-brutal-shadow-hover hover:translate-x-[2px] hover:translate-y-[2px] transition-all"
+                className="w-full bg-transparent text-secondary border-4 border-secondary font-bold uppercase tracking-wide text-base neo-brutal-shadow hover:bg-transparent hover:neo-brutal-shadow-hover hover:translate-x-[2px] hover:translate-y-[2px] transition-all"
               >
                 <Link href="/regolamento">Regolamento</Link>
               </Button>
+
+              <Button 
+                asChild
+                variant="outline"
+                size="lg"
+                className="w-full bg-transparent text-secondary border-4 border-secondary font-bold uppercase tracking-wide text-base neo-brutal-shadow hover:bg-transparent hover:neo-brutal-shadow-hover hover:translate-x-[2px] hover:translate-y-[2px] transition-all"
+              >
+                <Link href="/info-torneo">
+                  Info Torneo
+                </Link>
+              </Button>
             </div>
+
           </div>
         </div>
       </div>
 
       {/* Decorative Elements */}
-      <div className="absolute bottom-0 left-0 right-0 h-4 bg-secondary" />
+      <div className="absolute bottom-0 left-0 right-0 h-1 bg-secondary" />
     </section>
   )
 }
