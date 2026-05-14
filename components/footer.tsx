@@ -34,12 +34,11 @@ export function Footer() {
             <Link 
               href="/" 
               className="flex items-center gap-2 font-bold text-xl uppercase tracking-tight"
-            >
-              
+            >  
               <span className="text-primary">Beerpong Frampula</span>
             </Link>
             <p className="text-sm text-muted-foreground max-w-xs">
-              The ultimate Beer Pong tournament experience. Compete, connect, and conquer.
+              Il torneo di Beerpong più grande d'Italia.
             </p>
           </div>
 
@@ -63,6 +62,7 @@ export function Footer() {
           </div>
 
           {/* Legal Links */}
+          {/*
           <div className="flex flex-col gap-4">
             <h3 className="font-bold text-lg uppercase text-primary">Legal</h3>
             <div className="flex flex-col gap-2">
@@ -77,6 +77,7 @@ export function Footer() {
               ))}
             </div>
           </div>
+           */}
         </div>
 
         <div className="mt-12 pt-6 border-t border-primary/30">
