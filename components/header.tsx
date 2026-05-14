@@ -12,7 +12,7 @@ const LOGO_SRC = '/logo.webp'
 
 const navLinks = [
   { href: '/', label: 'Home' },
-  { href: '/regolamento', label: 'Regolamento' },
+  { href: '/rules', label: 'Regolamento' },
   { href: '/contacts', label: 'Contatti' },
 ]
 

@@ -88,7 +88,7 @@ export function HeroSection() {
                 size="lg"
                 className="w-full bg-transparent text-secondary border-4 border-secondary font-bold uppercase tracking-wide text-base neo-brutal-shadow hover:bg-transparent hover:neo-brutal-shadow-hover hover:translate-x-[2px] hover:translate-y-[2px] transition-all"
               >
-                <Link href="/regolamento">Regolamento</Link>
+                <Link href="/rules">Regolamento</Link>
               </Button>
 
               <Button 
