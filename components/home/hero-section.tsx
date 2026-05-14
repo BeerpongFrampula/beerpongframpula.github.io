@@ -3,12 +3,15 @@ import Link from 'next/link'
 import { ArrowRight, CalendarDays, MapPin } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 
+const submissionForm = "https://tally.so/r/XxJPoj"
 const tournamentStats = [
   { id: 'beers', value: '2048', label: 'Lattine di birra' },
   { id: 'players', value: '512', label: 'Giocatori' },
   { id: 'teams', value: '256', label: 'Squadre' },
   { id: 'groups', value: '64', label: 'Gironi' },
 ]
+const tournamentAddrress = "https://www.google.it/maps/@44.1849893,12.1192426,3a,75y,347.83h,62.73t/data=!3m7!1e1!3m5!1sJPvxNCIHtNTdcbtA7YG4NA!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D27.270484070914783%26panoid%3DJPvxNCIHtNTdcbtA7YG4NA%26yaw%3D347.8327834415403!7i16384!8i8192?hl=it&entry=ttu&g_ep=EgoyMDI2MDUxMi4wIKXMDSoASAFQAw%3D%3D" 
+
 
 export function HeroSection() {
   return (
@@ -47,7 +50,15 @@ export function HeroSection() {
               </div>
               <div className="flex items-center gap-2">
                 <MapPin className="h-5 w-5 text-primary" />
-                <span className="font-medium">Forlimpopoli (FC)</span>
+                <a 
+                  className="font-medium"
+                  href={tournamentAddrress}
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                >
+                  Forlimpopoli, Via del Tulipano, 14
+                </a>
+                
               </div>
             </div>
 
@@ -74,7 +85,7 @@ export function HeroSection() {
                 className="col-span-2 w-full bg-blue-400 text-primary-foreground border-4 border-secondary font-bold uppercase tracking-wide text-base neo-brutal-shadow hover:bg-blue-400 hover:neo-brutal-shadow-hover hover:translate-x-[2px] hover:translate-y-[2px] transition-all"
               >
                 <a 
-                  href="https://tally.so/r/XxJPoj" 
+                  href={submissionForm}
                   target="_blank" 
                   rel="noopener noreferrer"
                 >

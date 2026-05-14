@@ -129,14 +129,21 @@
 }
 
 /* Neobrutalist utility classes */
+/* (0.85 0.18 90) */
 @layer utilities {
   .neo-brutal-shadow {
     box-shadow: 4px 4px 0px 0px oklch(0.145 0 0);
+  }
+  .neo-brutal-shadow-primary {
+    box-shadow: 4px 4px 0px 0px oklch(0.85 0.18 90);
   }
   .neo-brutal-shadow-lg {
     box-shadow: 6px 6px 0px 0px oklch(0.145 0 0);
   }
   .neo-brutal-shadow-hover {
     box-shadow: 2px 2px 0px 0px oklch(0.145 0 0);
+  }
+  .neo-brutal-shadow-primary-hover {
+    box-shadow: 2px 2px 0px 0px oklch(0.85 0.18 90);
   }
 }

@@ -35,7 +35,7 @@ export default function ContactsPage() {
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold uppercase tracking-tight text-primary mb-4 text-balance">
             Get in Touch
           </h1>
-          <p className="text-secondary-foreground text-lg max-w-2xl mx-auto">
+          <p className="text-secondary-foreground font-thin text-sm max-w-2xl mx-auto">
             Hai qualcosa da chiederci? Vuoi collaborare con noi? Non esitare a scriverci!
           </p>
         </div>
