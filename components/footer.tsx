@@ -62,8 +62,7 @@ export function Footer() {
           </div>
 
           {/* Legal Links */}
-          {/*
-          <div className="flex flex-col gap-4">
+          {/* <div className="flex flex-col gap-4">
             <h3 className="font-bold text-lg uppercase text-primary">Legal</h3>
             <div className="flex flex-col gap-2">
               {legalLinks.map((link) => (
@@ -76,8 +75,7 @@ export function Footer() {
                 </Link>
               ))}
             </div>
-          </div>
-           */}
+          </div> */}
         </div>
 
         <div className="mt-12 pt-6 border-t border-primary/30">

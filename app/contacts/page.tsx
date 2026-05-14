@@ -1,25 +1,26 @@
 import { ContactForm } from '@/components/contacts/contact-form'
-import { Mail, MapPin, Phone } from 'lucide-react'
+import { MapPin } from 'lucide-react'
+import { SiGmail, SiWhatsapp } from 'react-icons/si'
 
 const contactInfo = [
   {
-    icon: Mail,
+    icon: SiGmail,
     label: 'Email',
     value: 'beerpongframpula@gmail.com',
     href: 'mailto:beerpongframpula@gmail.com',
   },
   {
-    icon: Phone,
-    label: 'Telefono',
+    icon: SiWhatsapp,
+    label: 'Whatsapp',
     value: '+39 351 327 5210',
-    href: 'tel:+393513275210',
+    href: 'https://wa.me/393513275210',
   },
-  {
-    icon: MapPin,
-    label: 'Location',
-    value: 'Milan, Italy',
-    href: null,
-  },
+  // {
+  //   icon: MapPin,
+  //   label: 'Location',
+  //   value: 'Forlimpopoli (Forlì-Cesena, Italia)',
+  //   href: null,
+  // },
 ]
 
 export default function ContactsPage() {
@@ -28,30 +29,30 @@ export default function ContactsPage() {
       {/* Hero Header */}
       <section className="bg-secondary border-b-4 border-primary py-16 md:py-24">
         <div className="container mx-auto px-4 text-center">
-          <span className="inline-block bg-primary text-primary-foreground px-3 py-1 text-xs font-bold uppercase tracking-wider border-2 border-primary mb-4">
+          {/* <span className="inline-block bg-primary text-primary-foreground px-3 py-1 text-xs font-bold uppercase tracking-wider border-2 border-primary mb-4">
             Contact
-          </span>
+          </span> */}
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold uppercase tracking-tight text-primary mb-4 text-balance">
             Get in Touch
           </h1>
           <p className="text-secondary-foreground text-lg max-w-2xl mx-auto">
-            Have questions about our tournaments? Want to sponsor an event? We&apos;d love to hear from you!
+            Hai qualcosa da chiederci? Vuoi collaborare con noi? Non esitare a scriverci!
           </p>
         </div>
       </section>
 
       {/* Contact Section */}
-      <section className="py-16 md:py-24">
+      <section className="py-10 md:py-24">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
             {/* Contact Info */}
             <div>
               <h2 className="text-2xl md:text-3xl font-bold uppercase tracking-tight text-secondary mb-6">
-                Contact Information
+                Contatti
               </h2>
-              <p className="text-muted-foreground mb-8 leading-relaxed">
+              {/* <p className="text-muted-foreground mb-8 leading-relaxed">
                 Reach out to us through any of the following channels. We typically respond within 24 hours during business days.
-              </p>
+              </p> */}
 
               <div className="space-y-4">
                 {contactInfo.map((info) => (
@@ -69,6 +70,8 @@ export default function ContactsPage() {
                       {info.href ? (
                         <a
                           href={info.href}
+                          target="_blank"
+                          rel="noopener noreferrer"
                           className="font-medium text-secondary hover:text-primary transition-colors"
                         >
                           {info.value}
@@ -83,16 +86,18 @@ export default function ContactsPage() {
 
               {/* Social reminder */}
               <div className="mt-8 p-6 bg-primary/10 border-4 border-secondary">
-                <p className="font-bold text-secondary uppercase tracking-wide mb-2">
+                {/* <p className="font-bold text-secondary uppercase tracking-wide mb-2">
                   Follow Us
-                </p>
-                <p className="text-muted-foreground text-sm">
-                  Stay updated on upcoming tournaments and community events by following us on social media. Links are in the footer below!
+                </p> */}
+                <p className="text-muted-foreground font-bold text-sm">
+                  Seguici sui nostri social per rimanere aggiornato su tutte le novità e gli eventi in arrivo!
+                  Trovi tutti i link nel footer a fondo pagina.
                 </p>
               </div>
             </div>
 
             {/* Contact Form */}
+            {/*
             <div>
               <div className="bg-card border-4 border-secondary neo-brutal-shadow-lg p-6 md:p-8">
                 <h2 className="text-2xl font-bold uppercase tracking-tight text-secondary mb-6">
@@ -101,6 +106,7 @@ export default function ContactsPage() {
                 <ContactForm />
               </div>
             </div>
+            */}
           </div>
         </div>
       </section>
