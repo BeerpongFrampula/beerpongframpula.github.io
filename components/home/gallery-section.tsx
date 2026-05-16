@@ -61,8 +61,8 @@ export function GallerySection() {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious className="-left-12 md:-left-15 bg-secondary text-secondary-foreground border-4 border-secondary hover:bg-primary h-10 w-10 md:h-12 md:w-12" />
-            <CarouselNext className="-right-12 md:-right-15 bg-secondary text-secondary-foreground border-4 border-secondary hover:bg-primary h-10 w-10 md:h-12 md:w-12" />
+            <CarouselPrevious className="cursor-pointer -left-12 md:-left-16 bg-secondary text-secondary-foreground border-4 border-secondary hover:bg-primary h-10 w-10 md:h-12 md:w-12" />
+            <CarouselNext className="cursor-pointer -right-12 md:-right-16 bg-secondary text-secondary-foreground border-4 border-secondary hover:bg-primary h-10 w-10 md:h-12 md:w-12" />
           </Carousel>
         </div>
       </div>
