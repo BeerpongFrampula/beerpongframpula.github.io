@@ -20,7 +20,7 @@ const galleryImages = [
 
 export function GallerySection() {
   return (
-    <section className="py-10 md:py-24 bg-background">
+    <section id="info-torneo" className="py-10 md:py-24 bg-background scroll-mt-24 md:scroll-mt-10">
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-12">
