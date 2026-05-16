@@ -59,7 +59,7 @@ export const rules: Rule[] = [
         <li>NON si può soffiare o intercettare la pallina, a meno che non abbia già 
         effettuato due o più rimbalzi sul tavolo. Se un giocatore infrange questa regola deve 
         togliere dal tavolo un proprio bicchiere scelto dagli avversari</li>
-        <li>Se pallina cade accidentlamente in uno dei propri bicchieri NON bisogna 
+        <li>Se la pallina cade accidentlamente in uno dei propri bicchieri NON bisogna 
         rimuoverlo dal gioco</li>
         <li>Se un giocatore fa accidentalmente cadere uno (o più) dei propri bicchieri 
         bisogna toglierli dal gioco</li>
@@ -130,7 +130,7 @@ export const rules: Rule[] = [
         <li>La partita regolamentare dura 7 minuti. Il tempo della partita non viene mai fermato</li>
         <li>Se allo scadere del tempo la partita risulta in parità si procede allo 
         spareggio</li>
-        <li>Nello spareggio si posizionano 3 bicchieri per parte disposti a traingolo (2-1) 
+        <li>Nello spareggio si posizionano 3 bicchieri per parte disposti a triangolo (2-1) 
         e si continua la partita</li>
         <li>Nello spareggio delle fasi finali non c’è limite di tempo</li>
         <li>Se una squadra riesce a terminare tutti i bicchieri della squadra avversaria 

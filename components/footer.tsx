@@ -80,7 +80,7 @@ export function Footer() {
 
         <div className="mt-12 pt-6 border-t border-primary/30">
           <p className="text-center text-sm text-muted-foreground">
-            &copy; {new Date().getFullYear()} Beer Pong Frampula. All rights reserved.
+            &copy; {new Date().getFullYear()} Frampula Events A.P.S. - P.IVA: 04710690407
           </p>
         </div>
       </div>
