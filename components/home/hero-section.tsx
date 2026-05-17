@@ -1,7 +1,9 @@
+'use client'
 import Image from 'next/image'
 import Link from 'next/link'
 import { ArrowRight, CalendarDays, MapPin } from 'lucide-react'
 import { Button } from '@/components/ui/button'
+import React from 'react'
 
 const submissionForm = "https://tally.so/r/XxJPoj"
 const tournamentStats = [
@@ -14,6 +16,15 @@ const tournamentAddrress = "https://www.google.it/maps/@44.1849893,12.1192426,3a
 
 
 export function HeroSection() {
+  const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault() // stops the URL from updating with #info-torneo
+
+    const section = document.getElementById('info-torneo')
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    }
+  }
+
   return (
     <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
       {/* Background Image */}
@@ -108,9 +119,12 @@ export function HeroSection() {
                 size="lg"
                 className="w-full bg-transparent text-secondary border-4 border-secondary font-bold uppercase tracking-wide text-base neo-brutal-shadow hover:bg-transparent hover:neo-brutal-shadow-hover hover:translate-x-[2px] hover:translate-y-[2px] transition-all"
               >
-                <Link href="#info-torneo">
+                <a
+                  href="#info-torneo"
+                  onClick={handleScroll}
+                >
                   Info Torneo
-                </Link>
+                </a>
               </Button>
             </div>
 
