@@ -5,7 +5,7 @@ import { ArrowRight, CalendarDays, MapPin } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import React from 'react'
 
-const submissionForm = "https://tally.so/r/D4j4NZ"
+export const submissionForm = "https://tally.so/r/D4j4NZ"
 const tournamentStats = [
   { id: 'beers', value: '1020', label: 'Lattine di birra' },
   { id: 'players', value: '256', label: 'Giocatori' },

@@ -6,7 +6,8 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from '@/components/ui/accordion'
-import { rules, submissionForm } from '@/config/rules'
+import { rules } from '@/config/rules'
+import { submissionForm } from '@/components/home/hero-section'
 
 
 export default function RegolamentoPage() {
