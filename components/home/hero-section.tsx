@@ -5,12 +5,12 @@ import { ArrowRight, CalendarDays, MapPin } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import React from 'react'
 
-const submissionForm = "https://tally.so/r/XxJPoj"
+const submissionForm = "https://tally.so/r/D4j4NZ"
 const tournamentStats = [
-  { id: 'beers', value: '2048', label: 'Lattine di birra' },
-  { id: 'players', value: '512', label: 'Giocatori' },
-  { id: 'teams', value: '256', label: 'Squadre' },
-  { id: 'groups', value: '64', label: 'Gironi' },
+  { id: 'beers', value: '1020', label: 'Lattine di birra' },
+  { id: 'players', value: '256', label: 'Giocatori' },
+  { id: 'teams', value: '128', label: 'Squadre' },
+  { id: 'groups', value: '32', label: 'Gironi' },
 ]
 const tournamentAddrress = "https://www.google.it/maps/@44.1849893,12.1192426,3a,75y,347.83h,62.73t/data=!3m7!1e1!3m5!1sJPvxNCIHtNTdcbtA7YG4NA!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D27.270484070914783%26panoid%3DJPvxNCIHtNTdcbtA7YG4NA%26yaw%3D347.8327834415403!7i16384!8i8192?hl=it&entry=ttu&g_ep=EgoyMDI2MDUxMi4wIKXMDSoASAFQAw%3D%3D" 
 
@@ -46,7 +46,7 @@ export function HeroSection() {
           <div className="bg-card border-4 border-secondary neo-brutal-shadow-lg p-6 md:p-10">
             <div className="mb-4">
               <span className="inline-block bg-primary text-primary-foreground px-3 py-1 text-xs md:text-sm font-bold uppercase tracking-wider border-2 border-secondary">
-                XXIII Edizione, Beerpong Frampula
+                XXV Edizione, Beerpong Frampula
               </span>
             </div>
             
@@ -57,7 +57,7 @@ export function HeroSection() {
             <div className="flex flex-col sm:flex-row gap-4 mb-6 text-secondary">
               <div className="flex items-center gap-2">
                 <CalendarDays className="h-5 w-5 text-primary" />
-                <span className="font-medium">Sabato, 6 Giugno 2026</span>
+                <span className="font-medium">Sabato, 3 Ottobre</span>
               </div>
               <div className="flex items-center gap-2">
                 <MapPin className="h-5 w-5 text-primary" />
@@ -67,7 +67,7 @@ export function HeroSection() {
                   target="_blank" 
                   rel="noopener noreferrer"
                 >
-                  Forlimpopoli, Via del Tulipano, 14
+                  Rocca di Forlimpopoli
                 </a>
                 
               </div>

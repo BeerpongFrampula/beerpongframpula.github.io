@@ -32,7 +32,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="en" className="scroll-smooth" data-scroll-behavior="smooth">
       <body className={`${spaceGrotesk.variable} ${spaceMono.variable} font-sans antialiased`}>
         <Header />
         <main className="min-h-screen pt-16 md:pt-20">

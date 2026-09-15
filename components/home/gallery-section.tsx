@@ -11,11 +11,11 @@ import {
 } from '@/components/ui/carousel'
 
 const galleryImages = [
-  { src: '/images/1.png', alt: 'Locandina' },
-  { src: '/images/2.png', alt: 'Programma serata' },
-  { src: '/images/3.png', alt: 'Costi iscrizione' },
-  { src: '/images/4.png', alt: 'Aperitivo' },
-  { src: '/images/5.png', alt: 'Musica' },
+  { src: '/images/1.png', alt: 'Loocandina Logo' },
+  { src: '/images/2.jpeg', alt: 'Locandina Rocca' },
+  { src: '/images/3.png', alt: 'Line Up' },
+  { src: '/images/4.png', alt: 'Costi Iscrizione' },
+  { src: '/images/5.png', alt: 'Musica e Cibo' },
 ]
 
 export function GallerySection() {
